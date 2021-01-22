@@ -50,6 +50,9 @@
 				</div>
 				@endforeach
             </div><!-- end row -->
+            <div class="d-flex justify-content-center">
+                {!! $athletes->links() !!}
+            </div>
         </div><!-- end container -->
     </div><!-- end section -->	
 

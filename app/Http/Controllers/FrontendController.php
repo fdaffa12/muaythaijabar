@@ -22,7 +22,7 @@ class FrontendController extends Controller
 	}
 
 	public function athlete(){
-		$athletes = Athlete::where('status','1')->latest()->get();
+		$athletes = Athlete::where('status','1')->orderby('id','DESC')->paginate(12);
 		return view('athlete', compact('athletes'));
 	}
 

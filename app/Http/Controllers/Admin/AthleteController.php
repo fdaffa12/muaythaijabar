@@ -20,10 +20,10 @@ class AthleteController extends Controller
     }
 
     public function addAthlete (){
-    	$categories = Category::latest()->get();
-    	$clubs = Club::latest()->get();
-    	$kelass = Kelas::latest()->get();
-    	$pengcabs = Pengcab::latest()->get();
+    	$categories = Category::orderby('category_name', 'ASC')->get();
+    	$clubs = Club::orderby('club_name', 'ASC')->get();
+    	$kelass = Kelas::orderby('kelas_name', 'ASC')->get();
+    	$pengcabs = Pengcab::orderby('pengcab_name', 'ASC')->get();
     	return view ('admin.athlete.add', compact('categories', 'clubs', 'kelass', 'pengcabs'));
     }
 

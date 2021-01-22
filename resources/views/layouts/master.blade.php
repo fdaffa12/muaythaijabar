@@ -118,7 +118,7 @@
                         <div class="footer-right">
 							<ul class="footer-links-soi">
 								<li><a href="#"><i class="fa fa-facebook"></i></a></li>
-								<li><a href="#"><i class="fa fa-github"></i></a></li>
+								<li><a href="https://github.com/fdaffa12/muaythaijabar"><i class="fa fa-github"></i></a></li>
 								<li><a href="#"><i class="fa fa-twitter"></i></a></li>
 							</ul><!-- end links -->
 						</div>
